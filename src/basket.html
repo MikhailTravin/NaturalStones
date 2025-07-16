@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Корзина"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page basket">
+				<div class="page__banner banner">
+					<div class="banner__bg">
+						<img src="../img/bg-4.png" alt>
+					</div>
+					<div data-watch data-watch-once class="banner__container">
+						<div class="breadcrambs">
+							<div class="breadcrambs__content">
+								<div class="breadcrambs__list">
+									<div class="breadcrambs__item"><a href="#">Главная</a></div>
+									<span>/</span>
+									<div class="breadcrambs__item"><span>Корзина</span></div>
+								</div>
+							</div>
+						</div>
+						<h1>Корзина</h1>
+					</div>
+				</div>
+				<div class="page__basket basket">
+					<div class="basket__container">
+						<div class="basket__left left-basket">
+							<div class="left-basket__products">
+								<div data-watch data-watch-once class="left-basket__top">
+									<h3>В корзине 5 товаров</h3>
+									<a href="#" class="left-basket__remove">Очистить корзину</a>
+								</div>
+								<div class="left-basket__content">
+									<div data-watch data-watch-once class="left-basket__column">
+										<div class="left-basket__item item-left-basket">
+											<a href="#" class="item-left-basket__image">
+												<img src="../img/products/product-3.png" alt>
+											</a>
+											<div class="item-left-basket__desc">
+												<a href="#" class="item-left-basket__top">
+													<div class="item-left-basket__title">Валуны ландшафтные</div>
+													<div class="item-left-basket__subtitle"><span>2см</span> <div class="item-left-basket__sum-mob">1 200 ₽/м²</div></div>
+												</a>
+												<div class="item-left-basket__bottom">
+													<div class="item-left-basket__sum">1 200 ₽/м²</div>
+													<div class="item-left-basket__totals">
+														<div class="item-left-basket__quantity quantity">
+															<button type="button" class="quantity__button quantity__button_minus"></button>
+															<div class="quantity__input">
+																<input autocomplete="off" type="text" name="form[]" value="3">
+															</div>
+															<button type="button" class="quantity__button quantity__button_plus"></button>
+														</div>
+														<div class="item-left-basket__total">26 000 ₽/м²</div>
+													</div>
+												</div>
+												<div class="item-left-basket__close _icon-close"></div>
+											</div>
+										</div>
+									</div>
+									<div data-watch data-watch-once class="left-basket__column">
+										<div class="left-basket__item item-left-basket">
+											<a href="#" class="item-left-basket__image">
+												<img data-src="../img/products/product-1.png" alt>
+											</a>
+											<div class="item-left-basket__desc">
+												<a href="#" class="item-left-basket__top">
+													<div class="item-left-basket__title">Валуны ландшафтные</div>
+													<div class="item-left-basket__subtitle"><span>2см</span> <div class="item-left-basket__sum-mob">1 200 ₽/м²</div></div>
+												</a>
+												<div class="item-left-basket__bottom">
+													<div class="item-left-basket__sum">1 200 ₽/м²</div>
+													<div class="item-left-basket__totals">
+														<div class="item-left-basket__quantity quantity">
+															<button type="button" class="quantity__button quantity__button_minus"></button>
+															<div class="quantity__input">
+																<input autocomplete="off" type="text" name="form[]" value="3">
+															</div>
+															<button type="button" class="quantity__button quantity__button_plus"></button>
+														</div>
+														<div class="item-left-basket__total">26 000 ₽/м²</div>
+													</div>
+												</div>
+												<div class="item-left-basket__close _icon-close"></div>
+											</div>
+										</div>
+									</div>
+									<div data-watch data-watch-once class="left-basket__column">
+										<div class="left-basket__item item-left-basket">
+											<a href="#" class="item-left-basket__image">
+												<img data-src="../img/products/product-2.png" alt>
+											</a>
+											<div class="item-left-basket__desc">
+												<a href="#" class="item-left-basket__top">
+													<div class="item-left-basket__title">Валуны ландшафтные</div>
+													<div class="item-left-basket__subtitle"><span>2см</span> <div class="item-left-basket__sum-mob">1 200 ₽/м²</div></div>
+												</a>
+												<div class="item-left-basket__bottom">
+													<div class="item-left-basket__sum">1 200 ₽/м²</div>
+													<div class="item-left-basket__totals">
+														<div class="item-left-basket__quantity quantity">
+															<button type="button" class="quantity__button quantity__button_minus"></button>
+															<div class="quantity__input">
+																<input autocomplete="off" type="text" name="form[]" value="3">
+															</div>
+															<button type="button" class="quantity__button quantity__button_plus"></button>
+														</div>
+														<div class="item-left-basket__total">26 000 ₽/м²</div>
+													</div>
+												</div>
+												<div class="item-left-basket__close _icon-close"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="left-basket__forms">
+								<form action="#" class="left-basket__form form-left-basket">
+									<h3 data-watch data-watch-once>Оформление заказа</h3>
+									<div data-watch data-watch-once class="form-left-basket__column">
+										<h4>Контактная информация</h4>
+										<div class="form-left-basket__inputs">
+											<div class="form-left-basket__input">
+												<label for="tel-2">Телефон:</label>
+												<input data-required id="tel-2" autocomplete="off" type="text" name="form[]" placeholder="+7" class="tel">
+											</div>
+											<div class="form-left-basket__input">
+												<label for="email">E-mail:</label>
+												<input data-required data-validate id="email" autocomplete="off" type="text" name="form[]">
+											</div>
+										</div>
+										<div class="form-left-basket__inputs">
+											<div class="form-left-basket__input">
+												<label for="comment">Комментарий:</label>
+												<textarea id="comment"></textarea>
+											</div>
+										</div>
+									</div>
+									<div data-watch data-watch-once class="form-left-basket__column">
+										<h4>Варианты доставки</h4>
+										<div class="form-left-basket__options options">
+											<div class="options__item">
+												<input hidden id="o_1" class="options__input" type="radio" value="1" name="option_1">
+												<label for="o_1" class="options__label"><span class="options__text">Самовывоз Борисово</span></label>
+											</div>
+											<div class="options__item">
+												<input hidden id="o_2" class="options__input" type="radio" value="2" name="option_1">
+												<label for="o_2" class="options__label"><span class="options__text">Самовывоз Дракино</span></label>
+											</div>
+											<div class="options__item">
+												<input checked hidden id="o_3" class="options__input" type="radio" value="3" name="option_1">
+												<label for="o_3" class="options__label"><span class="options__text">Доставка манипулятором</span></label>
+											</div>
+										</div>
+										<div class="form-left-basket__desc">
+											<p>
+												Стоимость доставки и разгрузки зависит от объёма заказа и удалённости получателя от наших площадок. Минимальная стоимость 3500₽ до 20км пути, дальше 170₽/км
+											</p>
+											<p>
+												Приблизительное время доставки: 29 июня 2023
+											</p>
+										</div>
+										<div class="form-left-basket__inputs">
+											<div class="form-left-basket__input">
+												<label for="city">Город (населенный пункт):</label>
+												<input data-required id="city" autocomplete="off" type="text" name="form[]" value="Москва">
+											</div>
+											<div class="form-left-basket__input">
+												<label for="street">Улица, дом, квартира:</label>
+												<input data-required id="street" autocomplete="off" type="text" name="form[]">
+											</div>
+										</div>
+									</div>
+									<div data-watch data-watch-once class="form-left-basket__column">
+										<h4>Варианты оплаты</h4>
+										<div class="form-left-basket__options options">
+											<div class="options__item">
+												<input hidden id="o_4" class="options__input" type="radio" value="4" name="option_2">
+												<label for="o_4" class="options__label"><span class="options__text">Наличными</span></label>
+											</div>
+											<div class="options__item">
+												<input hidden id="o_5" class="options__input" type="radio" value="5" name="option_2">
+												<label for="o_5" class="options__label"><span class="options__text">Карта</span></label>
+											</div>
+											<div class="options__item">
+												<input checked hidden id="o_6" class="options__input" type="radio" value="6" name="option_2">
+												<label for="o_6" class="options__label"><span class="options__text">Безналичный перевод для юрлиц</span></label>
+											</div>
+										</div>
+									</div>
+									<button type="submit" class="form-left-basket__button button"><span>Оформить заказ</span></button>
+								</form>
+							</div>
+						</div>
+						<div data-watch data-watch-once class="basket__right right-basket">
+							<div class="right-basket__content">
+								<div data-watch data-watch-once data-da=".basket__left, 991.98" class="right-basket__body">
+									<div class="right-basket__icon _icon-wallet"></div>
+									<div class="right-basket__sale">
+										Скидка:
+										<span>-3 000 ₽/м²</span>
+									</div>
+									<div class="right-basket__total">
+										<span>Итого:</span>
+										79 000 ₽/м²
+									</div>
+									<a href="#" class="right-basket__button button"><span>Оформить заказ</span></a>
+									<p>Минимальная сумма заказа 20 000 ₽</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

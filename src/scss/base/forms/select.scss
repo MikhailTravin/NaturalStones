@@ -1,0 +1,250 @@
+.select {
+	position: relative;
+	// .select__menu
+	&__menu {
+		position: relative;
+		&._active {
+			.select__btn {
+				z-index: 6;
+			}
+			.select__icon {
+				transform: rotate(180deg);
+			}
+			.select__body {
+				display: block;
+			}
+			.select__input {
+				border-radius: 20px 20px 0px 0px;
+			}
+		}
+	}
+	// .select__btn
+	&__btn {
+		position: relative;
+		cursor: pointer;
+		label {
+			font-size: 16px;
+			font-weight: 600;
+			display: flex;
+			margin: 0px 0px 7px 0px;
+		}
+	}
+	// .select__btntext
+	&__btntext {
+		position: relative;
+		border-radius: 90px;
+		input {
+			width: 100%;
+			background: $color_white;
+			border-radius: 90px;
+			padding: 17px 34px 17px 34px;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: math.div(21, 16);
+			&::placeholder {
+				color: $mainColor;
+			}
+		}
+	}
+	// .select__input
+	&__input {
+		width: 100%;
+		background: $color_white;
+		border-radius: 90px;
+		padding: 17px 34px 17px 34px;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: math.div(21, 16);
+		&::placeholder {
+			color: $mainColor;
+		}
+	}
+	// .select__icon
+	&__icon {
+		cursor: pointer;
+		position: absolute;
+		top: 23px;
+		right: 20px;
+		transition: all 0.3s ease 0s;
+		&::before {
+			font-size: 10px;
+			transform: rotate(90deg);
+			color: $color_green;
+		}
+	}
+	// .select__icon-filter
+	&__icon-filter {
+		cursor: pointer;
+		position: absolute;
+		top: 9px;
+		left: 15px;
+		transition: all 0.3s ease 0s;
+		z-index: 2;
+		&::before {
+			font-size: 24px;
+			color: $color_green;
+		}
+	}
+	// .select__body
+	&__body {
+		outline: none;
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		z-index: 5;
+		border-radius: 0px 0px 20px 20px;
+		box-shadow: 14px 22px 40px 0px rgba(30, 35, 66, 0.28);
+	}
+	// .select__options
+	&__options {
+		max-height: 100px;
+		background: $color_white;
+		border-radius: 0px 0px 20px 20px;
+		overflow: auto;
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+	// .select__option
+	&__option {
+		cursor: pointer;
+		padding: 5px 22px 5px 34px;
+		transition: all 0.3s ease 0s;
+		display: block;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: math.div(21, 16);
+		&:hover {
+			background: #c3c3c3;
+		}
+	}
+	// .select__option-text
+	&__option-text {
+	}
+}
+
+.sorting-right-catalog__select {
+	.select__menu {
+		&._active {
+			.select__input {
+				border-bottom: 1px solid transparent;
+			}
+		}
+	}
+	.select__input {
+		padding: 10px 20px 10px 46px;
+		border: 1px solid #c3c3c3;
+	}
+	.select__body {
+		border-right: 1px solid #c3c3c3;
+		border-left: 1px solid #c3c3c3;
+		border-bottom: 1px solid #c3c3c3;
+	}
+	.select__option {
+		padding: 5px 22px 5px 46px;
+	}
+}
+
+.top-product-card__select {
+	.select__btntext {
+		input {
+			background: #f2f2f2;
+			padding: 17px 34px 17px 23px;
+		}
+	}
+	.select__input {
+		background: #f2f2f2;
+		padding: 17px 34px 17px 23px;
+	}
+	.select__icon {
+		top: 23px;
+		right: 20px;
+		&::before {
+			color: $mainColor;
+		}
+	}
+	.select__options {
+		background: #f2f2f2;
+	}
+	.select__option {
+		padding: 5px 23px 5px 23px;
+	}
+}
+
+.select-other {
+	.select {
+		position: relative;
+		&._select-open {
+			.select__title {
+				border-radius: 20px 20px 0px 0px;
+			}
+			.select__value {
+				&::before {
+					transform: rotate(-90deg);
+				}
+			}
+			.select__options {
+				display: block;
+			}
+		}
+		// .select__body
+		&__body {
+			position: relative;
+			display: flex;
+			box-shadow: none;
+		}
+		// .select__title
+		&__title {
+			display: flex;
+			position: relative;
+			width: 100%;
+			background: #f2f2f2;
+			padding: 17px 34px 17px 23px;
+			border-radius: 90px;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: math.div(21, 16);
+			&::placeholder {
+				color: $mainColor;
+			}
+		}
+		// .select__value
+		&__value {
+			&::before {
+				font-size: 10px;
+				transform: rotate(90deg);
+				color: $color_green;
+				cursor: pointer;
+				position: absolute;
+				top: 23px;
+				right: 20px;
+				transition: all 0.3s ease 0s;
+			}
+		}
+		// .select__text
+		&__text {
+			flex: 1 1 auto;
+		}
+		// .select__options
+		&__options {
+			display: none;
+			outline: none;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 100%;
+			z-index: 5;
+			border-radius: 0px 0px 20px 20px;
+			box-shadow: 14px 22px 40px 0px rgba(30, 35, 66, 0.28);
+		}
+		// .select__option
+		&__option {
+			display: flex;
+			width: 100%;
+		}
+	}
+}
